@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpine Private — Demo Banking</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f4f6f8;color:#18212b}
+.header{height:72px;background:#fff;border-bottom:1px solid #e4e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:relative}
+.logo{font-size:22px;font-weight:700;letter-spacing:.4px}.logo span{color:#a40000}
+.user{font-size:14px;color:#66717d}
+.wrap{max-width:1050px;margin:42px auto;padding:0 22px}
+.demo{position:fixed;top:0;left:50%;transform:translateX(-50%);background:#a40000;color:white;font-size:11px;font-weight:800;letter-spacing:2px;padding:6px 18px;border-radius:0 0 8px 8px;z-index:10}
+h1{font-size:30px;margin:0 0 8px}.sub{color:#6d7782;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.card{background:white;border:1px solid #e1e5e9;border-radius:14px;padding:28px;box-shadow:0 4px 18px #17212b0d}
+.label{font-size:13px;color:#77818c;text-transform:uppercase;letter-spacing:1px}
+.balance{font-size:42px;font-weight:700;margin:10px 0 8px}
+.currency{font-size:18px;font-weight:500;color:#6d7782}
+.account{font-size:14px;color:#6d7782}
+.row{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #edf0f2;font-size:14px}
+.row:last-child{border-bottom:0}
+.good{color:#197a45;font-weight:600}
+.btn{display:inline-block;margin-top:20px;background:#1d2935;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-size:14px}
+.notice{margin-top:22px;background:#fff7e6;border:1px solid #f0d49a;color:#755b24;padding:14px 16px;border-radius:10px;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.balance{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo">ALPINE <span>PRIVATE</span></div>
+  <div class="user">Demo-Kunde · Private Banking</div>
+</header>
+
+<main class="wrap">
+  <h1>Kontoübersicht</h1>
+  <div class="sub">Persönlicher Bereich · EUR-Portfolio</div>
+
+  <section class="grid">
+    <div class="card">
+      <div class="label">Verfügbarer Saldo</div>
+      <div class="balance">EUR 81'482</div>
+      <div class="account">Konto ·•••• 4821 · Status: <span class="good">Aktiv</span></div>
+      <a class="btn" href="#">Transaktionsverlauf</a>
+    </div>
+
+    <div class="card">
+      <div class="label">Zusammenfassung</div>
+      <div class="row"><span>Aktueller Saldo</span><strong>EUR 81'482</strong></div>
+      <div class="row"><span>Gesperrter Betrag</span><strong>EUR 0</strong></div>
+      <div class="row"><span>Verfügbarer Betrag</span><strong class="good">EUR 81'482</strong></div>
+    </div>
+  </section>
+
+  <div class="notice">
+    <strong>DEMO • KEINE ECHTE BANK</strong><br><br>Dies ist ein fiktiver Demo-Mockup zu Präsentationszwecken. Es handelt sich nicht um eine echte Bankseite und bestätigt weder ein Bankkonto noch vorhandene Vermögenswerte.
+  </div>
+</main>
+</body>
+</html>
